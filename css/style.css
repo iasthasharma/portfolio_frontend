@@ -1,0 +1,434 @@
+/* Dark Theme & Gradient */
+body {
+    background: #121212;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/* Custom Navbar */
+.custom-navbar {
+    background: rgba(0, 0, 0, 0.6);
+    /* Semi-transparent for glass effect */
+    backdrop-filter: blur(10px);
+    /* Frosted glass effect */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 15px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Navbar Brand (Logo) */
+.logo-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff00ff, #00ffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s ease;
+}
+
+.logo-text:hover {
+    opacity: 0.8;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.8);
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Navbar Link Hover Effects */
+.navbar-nav .nav-link:hover {
+    color: #00ffff;
+}
+
+/* Underline Hover Animation */
+.navbar-nav .nav-link::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0%;
+    background: linear-gradient(90deg, #ff00ff, #00ffff);
+    transition: width 0.3s ease-in-out;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+/* Navbar on Scroll Effect */
+.custom-navbar.scrolled {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Home Section */
+.home {
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(135deg, #222, #121212);
+}
+
+.gradient-text {
+    background: linear-gradient(45deg, #ff8a00, #e52e71);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #ff8a00, #e52e71);
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    opacity: 0.8;
+}
+
+/* Why Choose Us Section */
+.info-box {
+    background: linear-gradient(135deg, #1e1e1e, #333);
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.info-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Contact Section */
+.contact {
+    background: linear-gradient(135deg, #121212, #1e1e1e);
+    padding: 60px 0;
+}
+
+.contact .btn-primary {
+    background: linear-gradient(45deg, #ff8a00, #e52e71);
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.contact .btn-primary:hover {
+    transform: translateY(-5px);
+    opacity: 0.8;
+}
+
+/* Projects Section */
+.projects {
+    background: linear-gradient(135deg, #121212, #1e1e1e);
+    padding: 60px 0;
+}
+
+.project-box {
+    background: linear-gradient(135deg, #1e1e1e, #333);
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-size: 1.1rem;
+    width: 100%;
+    max-width: 900px;
+    /* Makes them long horizontally */
+    height: 150px;
+    /* Controls the height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover & Tilt Effect */
+.project-box:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+    transform: perspective(1000px) rotateX(5deg) rotateY(5deg);
+}
+
+/* Services Section */
+.services {
+    background: linear-gradient(135deg, #121212, #1e1e1e);
+    padding: 60px 0;
+}
+
+.service-box {
+    background: linear-gradient(135deg, #1e1e1e, #333);
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-size: 1.1rem;
+    width: 100%;
+    max-width: 900px;
+    /* Makes them long horizontally */
+    height: 150px;
+    /* Controls the height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover & Tilt Effect */
+.service-box:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+    transform: perspective(1000px) rotateX(5deg) rotateY(5deg);
+}
+
+/* Contact Section */
+.contact {
+    background: linear-gradient(135deg, #121212, #1e1e1e);
+    padding: 60px 0;
+}
+
+.contact-box {
+    background: linear-gradient(135deg, #1e1e1e, #333);
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-size: 1.1rem;
+    width: 100%;
+    max-width: 600px;
+    margin: 15px auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.contact-box:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+    transform: scale(1.05);
+}
+
+/* Social Links */
+.social-link {
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #0b5ed7;
+}
+
+/* Send Message Button */
+.contact .btn-primary {
+    background: linear-gradient(135deg, #0d6efd, #0b5ed7);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+}
+
+.contact .btn-primary:hover {
+    background: linear-gradient(135deg, #0b5ed7, #084298);
+}
+
+/* Hide sections initially */
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* When sections become visible */
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Navbar shrinking effect */
+.navbar {
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-shrink {
+    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Glowing Button Effect */
+.btn-primary {
+    transition: box-shadow 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 0 15px rgba(13, 110, 253, 0.7);
+    transform: scale(1.05);
+}
+
+/* Add a subtle neon glow effect to boxes */
+.project-box,
+.service-box,
+.contact-box {
+    transition: box-shadow 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.project-box:hover,
+.service-box:hover,
+.contact-box:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    transform: scale(1.02);
+}
+
+/* Custom cursor */
+.custom-cursor {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background-color: #0d6efd;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s linear;
+    z-index: 1000;
+}
+
+/* Gradient border animation */
+.project-box,
+.service-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-box::before,
+.service-box::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    background: linear-gradient(45deg, #ff5722, #ff9800, #ff5722);
+    z-index: -1;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-box:hover::before,
+.service-box:hover::before {
+    transform: rotate(180deg);
+}
+
+/* Floating icons animation */
+.floating-icons {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.floating-icons::before {
+    content: "⚡ ⚙️ 🚀 💡";
+    font-size: 20px;
+    opacity: 0.1;
+    position: absolute;
+    animation: float 10s infinite linear;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-20px) rotate(180deg);
+    }
+
+    100% {
+        transform: translateY(0px) rotate(360deg);
+    }
+}
+
+/* Back-to-Top Button */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #0d6efd, #0b5ed7);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+#back-to-top:hover {
+    background: linear-gradient(135deg, #0b5ed7, #084298);
+}
+
+/* Parallax effect */
+.parallax {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.tech-slider {
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 20px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.tech-track {
+    display: flex;
+    animation: marquee 10s linear infinite;
+}
+
+.tech-track img {
+    width: 60px;
+    margin: 0 20px;
+    filter: grayscale(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.tech-track img:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
